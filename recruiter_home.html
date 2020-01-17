@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> nolawyer.org.uk </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="keywords">
+
+<!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header id="header">
+    <div   class="recruiter">
+        <div class="logo">
+            <div class="logo-img">
+                <a href="recruiter_home.html"><img src="images/tag.png"></a>
+            </div>
+            <div class="logo-span">
+                <a href="recruiter_home.html"><span>CVLink</span></a>
+            </div>
+
+        </div>
+        <div class="logo-button">
+        <button id="interview" class=" right_button btn" onclick="view_overlay()">Invite for interview</button>
+
+        <button id="reject" class=" right_button2 btn" onclick="view_overlay_reject()">Reject CV</button>
+        </div>
+    </div>
+</header>
+    <div id="aboutScreen">
+        <div  class="angle-recruiter">
+            <div id="about">
+                <div >
+                    <div class="row rec-row ">
+                        <div class="col-xl-6 rec-left" >
+                            <div class="square_book">
+                                <h1 class="user-name" >James Orior : </h1>
+                                <span>Hardworking, Trustworthy, Dynamic, and Determined Individual</span>
+                                <button class="delete_video" >
+                                    video pitch
+                                </button>
+                            </div>
+
+                            <div class="square-rec-video-box">
+                                <div class="square-rec-video embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ohf_1212tqM? frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=yes" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                                </div>
+                             </div>
+                        </div>
+
+                        <div class="col-xl-6  rec-right" >
+                                <div id="rec-doc" class="square_book">
+                                    <h1 class="user-name" > My Document Repository</h1>
+                                </div>
+                            <div class="square-col-video-box">
+                                    <div class="square-col-video">
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <img src="images/document.png">
+                                                <p class="bold-p">Document.doc</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/document.png">
+                                                <p class="bold-p">Document.doc</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/pdf.png">
+                                                <p class="bold-p">Document.pdf</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/pdf.png">
+                                                <p class="bold-p">Document.pdf</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/xlsx.png">
+                                                <p class="bold-p">Document.xlsx</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/xlsx.png">
+                                                <p class="bold-p">Document.xlsx</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/jpeg.png">
+                                                <p class="bold-p">Document.jpeg</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/png.png">
+                                                <p class="bold-p">Document.png</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/jpeg.png">
+                                                <p class="bold-p">Document.jpeg</p>
+                                                <p class="solid-p">date updated</p>
+
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/xlsx.png">
+                                                <p class="bold-p">Document.xlsx</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/xlsx.png">
+                                                <p class="bold-p">Document.xlsx</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="background: #077cff">
+    <div class="footer">
+        <div class="row footer-first" >
+            <div class="col-xl-5 footer-circle">
+                <div class="circle-sa51 ">
+                    <div class="sa51">
+                        <a href="recruiter_home.html"><img src="images/sa51.png"></a>
+                    </div>
+                    <div class="sa-span">
+                        <a href="recruiter_home.html"><span>CVLink</span></a>
+                    </div>
+
+                </div>
+                <div class="circle-sa51 send">
+                    <p> <span> Don't just send your CV into a black hole, rather pitch employers with CVLink and </span><br>
+                        <span>make that first and lasing impression count.</span>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-xl-2 col-md-2 space">
+            </div>
+
+            <div class="col-xl-2 col-md-5">
+                <div class="our-company">
+                    <p>Our Company</p>
+                    <a href="#"><span>How it works</span></a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-5" style="margin: 0px;">
+                <div class="our-company">
+                    <p>Our Social Media Presence</p>
+                    <div class="footer-right" >
+                        <div>
+                            <a href="https://www.facebook.com/nolawyeruk/"><img src="images/face.png"></a>
+                        </div>
+                        <div class="footer-span">
+                            <a href="https://www.facebook.com/nolawyeruk/"><span>Facebook</span></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-right" >
+                        <div>
+                            <a href=" https://twitter.com/nolawyeruk"><img src="images/bird.png"></a>
+                        </div>
+                        <div class="footer-span">
+                            <a href=" https://twitter.com/nolawyeruk"><span>Twitter</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-second " >
+            <div class="col-xl-5 col-md-4 footer-circle">
+                <div class="footer-2019">
+                    <p>© 2019 CVLink</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4 space"></div>
+
+            <div class="col-xl-3 col-md-4">
+                <div class="footer-bottom">
+                    <div >
+                        <a href="privacy.html"><span>Privacy Policy</span></a>
+                    </div>
+                    <div class="footer-term">
+                        <a href="terms.html"><span>Terms & Conditions</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" style="display: none">
+        <div class="overlay-bg" onclick="hide_overlay()"></div>
+            <div class="background" ></div>
+            <div class="white-background">
+                <header class="cv-header">
+                    <a href="javascript: void (0);"  onclick="hide_overlay()" ><img  src="images/red%20triangle.png"></a>
+                    <h1>Send interview invite</h1>
+                </header>
+
+                <div class="content">
+                    <div class="content-space">
+                    </div>
+                    <div class="reject-full">
+                        <div class="from-span">
+                            <span>From:</span>
+                        </div>
+
+                        <div class="input-text">
+                            <input  type="text" placeholder="Sender name" class="from-reject-input">
+                            <hr>
+                        </div>
+                    </div>
+
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                            <span></span>
+                        </div>
+                        <div class="input-text">
+                            <input  type="text" placeholder="Sender email address" class="from-reject-input">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="reject-full">
+                        <div class="from-span" style="margin-top: 12px;" >
+                            <span> To:</span>
+                        </div>
+                        <div  class="input-text">
+                            <input id="to-james" type="text" placeholder="James Orior" class="from-reject-input">
+                            <hr style="margin-top: 3px">
+                        </div>
+                    </div>
+
+                    <div class="reject-full">
+                        <div class="from-span" style="margin-top: 12px;" >
+                            <span></span>
+                        </div>
+                        <div  class="input-text">
+                            <div class="subject">
+                                <div class="your-subject">
+                                    <span>Your subject line</span>
+                                </div>
+                                <div class="subject-e-g">
+                                    <input  type="text" placeholder="Subject e.g.Congratulations you're invited to attend interview" class="from-reject-input">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+                            <div class="square_invite-div">
+                                <div class="square-invite-ajax">
+                                    <button onclick="square1()"> <span>Interview Invitation Template 1</span> </button>
+                                </div>
+                                <div class="square-invite-ajax">
+                                    <button onclick="square2()"> <span >Interview Invitation Template 2</span> </button>
+                                </div>
+                                <div class="square-invite-ajax">
+                                    <button onclick="square3()"> <span >Interview Invitation Template 3</span> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+
+                            <textarea id="text-area"  placeholder="Enter details for your selections"></textarea>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+    </div>
+
+    <div class="overlay-reject" style="display: none">
+        <div class="overlay-bg" onclick="hide_overlay_reject()">
+
+        </div>
+        <div class="background" > </div>
+        <div class="white-background">
+            <header class="cv-header">
+                <a href="javascript: void (0);"  onclick="hide_overlay_reject()"> <img  src="images/red%20triangle.png"></a>
+                <h1>Send rejection & feedback</h1>
+            </header>
+
+            <div class="content">
+                <div class="content-space">
+                </div>
+                <div class="reject-full">
+                    <div class="from-span">
+                        <span>From:</span>
+                    </div>
+
+                    <div class="input-text">
+                        <input  type="text" placeholder="Sender name" class="from-reject-input">
+                        <hr>
+                    </div>
+                </div>
+
+
+                <div class="reject-full">
+                    <div class="from-span">
+                        <span></span>
+                    </div>
+                    <div class="input-text">
+                        <input  type="text" placeholder="Sender email address" class="from-reject-input">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="reject-full">
+                    <div class="from-span" style="margin-top: 12px;" >
+                        <span> To:</span>
+                    </div>
+                    <div  class="input-text">
+                        <input id="to-james-reject" type="text" placeholder="James Orior" class="from-reject-input">
+                        <hr style="margin-top: 3px">
+                    </div>
+                </div>
+
+
+                <p class="select"> Select why you're rejecting James Orior Application</p>
+
+                <div class="reject-full">
+                    <div class="from-span">
+                    </div>
+                    <div  class="input-text">
+                        <div class="square_reject-div">
+                            <div class="square-reject-ajax">
+                                <span>Little years of experience</span>
+                            </div>
+                            <div class="square-reject-ajax">
+                                <span >No relevant experience</span>
+                            </div>
+                            <div class="square-reject-ajax">
+                                <span >Not a Good Fit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reject-full">
+                    <div class="from-span">
+                    </div>
+                    <div  class="input-text">
+                        <div class="square_reject-div">
+                            <div class="square-reject-ajax1">
+                                <span>Did not meet the full list of essential criteria</span>
+                            </div>
+                            <div class="square-reject-ajax">
+                                <span >No desired experience</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="reject-full">
+                    <div class="from-span">
+                    </div>
+                    <div  class="input-text">
+                        <div class="square_reject-div">
+                            <div class="square-reject-ajax1">
+                                <span>Not enough evidence of experience / portfolio</span>
+                            </div>
+                            <div class="square-reject-ajax">
+                                <span >Other candidates were better</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p class="select"> What is your honest recommendation for James Orior so he can improve on his or her next application</p>
+
+                <div class="reject-full">
+                    <div class="from-span">
+                    </div>
+                    <div  class="input-text">
+                        <div class="square_reject-div">
+                            <div class="square-reject-ajax">
+                                <span>Do some work experience</span>
+                            </div>
+                            <div class="square-reject-ajax">
+                                <span >Improve on CV contents</span>
+                            </div>
+                            <div class="square-reject-ajax">
+                                <span >Do a Certification Course</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reject-full">
+                    <div class="from-span">
+                    </div>
+                    <div  class="input-text">
+                        <div class="square_reject-div">
+                            <div class="square-reject-ajax">
+                                <span>Improve on portfolio contents</span>
+                            </div>
+                            <div class="square-reject-ajax">
+                                <span >Apply for Entry / Junior Roles</span>
+                            </div>
+                            <div class="square-reject-ajax">
+                                <span >Do a Certification Course</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="reject-full">
+                    <div class="from-span">
+                    </div>
+                    <div  class="input-text">
+
+                        <textarea id="reject-textarea"  placeholder="Enter details for your selections"></textarea>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+<!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/additional-methods.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script src="js/book.js"></script>
+
+</body>
+</html>

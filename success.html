@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- <div id="preloader"></div> -->
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+<script>
+    var formData = window.localStorage.getItem('formData');
+    formData = JSON.parse(formData);
+    var email = formData.email;
+    var user_name = formData.user_name;
+    var email_number = formData.email_number;
+    var legal_problem = formData.legal_problem;
+    var when_come = formData.when_come;
+    var hours = formData.hours;
+
+    Email.send({
+        Host: "smtp.sendgrid.net",
+        Username: "newthemestar",
+        Password: "1230King",
+        To: 'jelode1581@4qmail.com',
+        From: "beautifuldream@outlook.com",
+        Subject: "Book_Consultation",
+        Body: "Booking details . <br> name:  " + user_name + "<br> email:"  + email +
+            "<br> email phone number:" + email_number + "<br> select your legal problem:" + legal_problem +
+            "<br>When date are you coming:" + when_come + "<br>When time are you coming:" + hours +
+            "",});
+    setTimeout(function () {
+        window.location.href = 'Book_Consultation.html';
+    }, 3000);
+</script>
+</body>
+</html>

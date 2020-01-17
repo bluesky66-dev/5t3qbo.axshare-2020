@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> nolawyer.org.uk </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="keywords">
+
+    <link href="images/onboarding_icon2_u12.png" rel="icon">
+
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://js.stripe.com/v3"></script>
+    <script>
+        function loadVid() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "video.html", true);
+            xhttp.send();
+        }
+
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo-vid").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "pdf-png.html", true);
+            xhttp.send();
+        }
+
+
+    </script>
+</head>
+
+<body>
+<header id="header">
+    <div class="header-relative">
+        <div class="logo">
+            <div class="logo-img">
+                <a href="Home.html"><img src="images/tag.png"></a>
+            </div>
+            <div class="logo-span">
+                <a href="Home.html"><span>CVLink</span></a>
+            </div>
+
+        </div>
+
+        <div class="header-home">
+            <div class="blue_span">
+                <span >http://www.cvlink.co/jamesorior</span>
+            </div>
+            <div id="home-link" class="home-button">
+                <a> <button>Share CVLink</button></a>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="home">
+    <div class="angle-home">
+        <div id="about">
+            <div class="container">
+                <div class="row home-row">
+                    <div class="col-xl-6 home-left" >
+                        <div class="square_book">
+                            <h1 class="user-name">James Orior: </h1>
+                            <span> Hardworking, Trustworthy, Dynamic, and Determined Individual</span>
+
+
+                            <button class="delete_video_home">
+                                Delete Video
+                            </button>
+
+                        </div>
+
+                        <div id="demo" class="square_video_box">
+                            <div class="square_video">
+                                <img src="images/video.png">
+                                <p><span>No video pitch found</span><br>
+                                <span>CVLink with video pitch less than 5 min long, get 75% chance of landing an interview or call back</span></p>
+                                <button class="upload-video" onclick="loadVid()">Upload video</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="demo-vid" class="col-xl-6 home-right" >
+                        <div class="square_book repost">
+                            <h1 class="user-name"> My Document Repository</h1>
+                        </div>
+
+                        <div class="square_video_box">
+                            <div class="square_video">
+                                <img src="images/w_open.png">
+                                <p><span>No document found</span><br>
+                                <span>you shoud have at least 1 CV copy to share your CVLink</span></p>
+
+                                <button class="upload-video" onclick="loadDoc()">Upload documents</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr style="background: #077cff">
+<div class="footer">
+    <div class="row footer-first" >
+        <div class="col-xl-5 footer-circle">
+            <div class="circle-sa51">
+                <div class="sa51">
+                    <a href="Home.html"><img src="images/sa51.png"></a>
+                </div>
+                <div class="sa-span">
+                    <a href="Home.html"><span>CVLink</span></a>
+                </div>
+
+            </div>
+            <div class="circle-sa51 send">
+                <p><span>Don't just send your CV into a black hole, rather pitch employers with CVLink and</span><br>
+                   <span> make that first and lasing impression count.</span><p>
+
+            </div>
+        </div>
+
+        <div class="col-xl-2 space col-md-2">
+        </div>
+
+        <div class="col-xl-2 col-md-5">
+            <div class="our-company">
+                <p>Our Company</p>
+                <a href="#"><span>How it works</span></a>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-5" style="margin: 0px;">
+            <div class="our-company">
+                <p>Our Social Media Presence</p>
+                <div class="footer-right" >
+                    <div>
+                        <a href="https://www.facebook.com/nolawyeruk/"><img src="images/face.png"></a>
+                    </div>
+                    <div class="footer-span">
+                        <a href="https://www.facebook.com/nolawyeruk/"><span>Facebook</span></a>
+                    </div>
+                </div>
+
+                <div class="footer-right" >
+                    <div>
+                        <a href=" https://twitter.com/nolawyeruk"><img src="images/bird.png"></a>
+                    </div>
+                    <div class="footer-span">
+                        <a href=" https://twitter.com/nolawyeruk"><span>Twitter</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer-second " >
+        <div class="col-xl-5 col-md-4 footer-circle">
+            <div class="footer-2019">
+                <p>© 2019 CVLink</p>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-4 space"></div>
+
+        <div class="col-xl-3 col-md-4">
+            <div class="footer-bottom">
+                <div >
+                    <a href="privacy.html"><span>Privacy Policy</span></a>
+                </div>
+                <div class="footer-term">
+                    <a href="terms.html"><span>Terms & Conditions</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+ <div class="overlay-home" style="overflow: scroll; display: none">
+
+    <div class="overlay-home-bg" onclick="hide_overlay_home()">
+    </div>
+    <div class="white-background">
+        <header class="cv-header">
+            <a href="javascript: void (0);" onclick="hide_overlay_home()"><img src="images/red%20triangle.png"></a>
+            <h1>Send interview invite</h1>
+        </header>
+
+        <div class="content">
+            <div class="content-space">
+            </div>
+            <div class="reject-full">
+                <div class="from-span">
+                    <span>To:</span>
+                </div>
+
+                <div class="input-text">
+                    <input type="text" placeholder="Sender name" class="from-reject-input">
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="reject-full">
+                <div class="from-span">
+                    <span></span>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder="Sender email address" class="from-reject-input">
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div class="input-text">
+                    <div class="square_invite-div">
+                        <div id="square1_cover" class="square-invite-ajax">
+                            <button onclick="square1_cover()"><span>Cover Letter Template 1</span></button>
+                        </div>
+                        <div id="square2_cover" class="square-invite-ajax">
+                            <button onclick="square2_cover()"><span>Cover Letter Template 2</span></button>
+                        </div>
+                        <div id="square3_cover" class="square-invite-ajax">
+                            <button onclick="square3_cover()"><span>Cover Letter Template 3</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div class="input-text">
+
+                    <textarea id="text-area" placeholder="Enter details for your selections"></textarea>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/mobile-nav/mobile-nav.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+<script src="js/book.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CVLink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+
+    <link href="images/onboarding_icon2_u12.png" rel="icon">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://js.stripe.com/v3"></script>
+    <script>
+        function insign() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("insign").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "sign-in.html", true);
+            xhttp.send();
+        }
+        </script>
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="newset" class="header-relative">
+        <div id="landing-img" class="logo">
+            <div  class="logo-img">
+                <a href="landing.html"><img src="images/tag.png"></a>
+            </div>
+            <div class="logo-span">
+                <a href="landing.html"><span>CVLink</span></a>
+            </div>
+
+        </div>
+
+        <div class="header-button ">
+           <a href="#mission-row"> <button>How it works</button></a>
+        </div>
+        </div>
+    </header>
+
+    <div class="angle-landing" style="">
+        <div id="about">
+            <div id="under"></div>
+            <div >
+                <div  class="row landing-row" >
+                    <div class="col-xl-6 your-first" >
+                        <div class="first">
+                            <p >Your first impression starts here!</p>
+                        </div>
+
+                            <span style="font-family:'Poppins';font-weight:400;">Don't just send your CV into a </span>
+                            <span style="font-family:'Poppins';font-weight:700;"> black hole</span>
+                            <span style="font-family:'Poppins';font-weight:400;">, rather pitch employers with your CVLink and make that first and lasing impression count.</span>
+
+
+
+
+                        <div class="square-landing-video-box">
+                            <div class="square-landing-video embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ohf_1212tqM? frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=yes" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                            </div>
+
+                        </div>
+                        <a href="#mission-row"><button  class="see">See how it works</button></a>
+
+
+                    </div>
+
+                    <div id="insign" class="col-xl-6" style="">
+                        <div class="square-landing-book">
+                           <h1 class="sign-name" > Sign up</h1>
+                            <span  class="account">Already have account?</span>
+                            <button class="login-button"  onclick="insign()">
+                                Login
+                            </button>
+                        </div>
+
+                        <div class="square-sign-login-box">
+                            <div class="square-sign-box">
+                                <input  id="first_name" type="text" name="first_name" value="" placeholder="First name" class="register-input">
+                                <input  id="last_name" type="text" name="last_name" value="" placeholder="Last name"  class="register-input">
+                                <input id="email"  type="email" name="email" value="" placeholder="Email address"  class="register-input">
+                                <input id="password"  type="password" name="password" value="" placeholder="Password"  class="register-input">
+                                <input id="repeat-password"  type="password" name="repeat-password" value="" placeholder="Your one liner e.g. 'Hardworking,Trustworthy,Dynamic, and Determined Individual' "  class="register-input">
+                                <div  class="landing-bottom">
+                                    <div  class="example">
+                                        <label class="checkbox-button">
+                                            <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                                            <span class="checkbox-button__control"></span>
+                                            <span class="checkbox-button__label" style="color:  #131031;">I agree to  <span class="terms"> mycvlink terms</span></span>
+                                        </label>
+                                    </div>
+
+                                    <a href="Home.html"><button  class="your-cvlink">Sign up & Get your cvlink</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="mission-row" style="padding-top:140px;padding-bottom: 30px;">
+
+                </div>
+                <div  class="mission">
+                    <div  class="we_are"><p>We're On A Mission</p></div>
+                    <div class=" give"> <span>To give every job seekers the right opportunity to showcase their talent and </span>
+                        <br><span>make a first and lasting impression that count.</span> </div>
+                </div>
+                <div class="row landing-row">
+                    <div class="col-lg-4 account_people">
+                        <img src="images/people.png">
+                        <div class="account_p"> <p>Create your account</p> </div><br>
+
+                        <span>Easily create your account in simple </span><br>
+                        <span>easy steps</span>
+                    </div>
+                    <div class="col-lg-4 account_people">
+                        <img src="images/sa.png">
+                        <div class="account_p"> <p>Get your CVLink</p> </div><br>
+                        <span>You get your personalised CVLink</span><br>
+                    </div>
+                    <div class="col-lg-4 account_people">
+                        <img src="images/update.png">
+                        <div class="account_p"> <p>Upload your pitch</p> </div><br>
+                        <span>Simply upload your pitch and other documents </span><br>
+                    </div>
+                    <div class="col-lg-4 account_people">
+                        <img src="images/triangle.png">
+                        <div class="account_p"> <p>Share your CVLink</p> </div><br>
+                        <span>You simple share your CVLink with recruiters </span><br>
+                        <span>and employers</span>
+                    </div>
+                    <div class="col-lg-4 account_people">
+                        <img src="images/email.png">
+                        <div class="account_p"> <p>Get Interview Invite</p> </div><br>
+                        <span>Get invited for interview</span><br>
+                    </div>
+                    <div class="col-lg-4 account_people">
+                        <img src="images/star.png">
+                        <div class="account_p"> <p>Get Feedback</p> </div><br>
+                        <span>Or get constructive feedback on your CVLInk </span><br>
+                    </div>
+                </div>
+                <div class="let_your">
+                    <p>Don't let your CV end up in a black hole.</p>
+                </div>
+                <div class="cv-get">
+                    <a href="#about"><button>Sign up & Get your CVLink</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="background: #077cff">
+    <div class="footer">
+        <div class="row footer-first" >
+            <div class="col-xl-5 footer-circle">
+            <div class="circle-sa51 ">
+                <div class="sa51">
+                    <a href="landing.html"><img src="images/sa51.png"></a>
+                </div>
+                <div class="sa-span">
+                    <a href="landing.html"> <span>CVLink</span></a>
+                </div>
+
+            </div>
+            <div class="circle-sa51 send">
+                <p><span>Don't just send your CV into a black hole, rather pitch employers with CVLink and</span><br>
+                    <span>make that first and lasing impression count.</span></p>
+
+            </div>
+        </div>
+
+            <div class="col-xl-2 space col-md-2">
+            </div>
+
+            <div class="col-xl-2 col-md-5">
+                <div class="our-company">
+                    <p>Our Company</p>
+                    <a href="#"><span>How it works</span></a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-5" style="margin: 0px;">
+                <div class="our-company">
+                    <p>Our Social Media Presence</p>
+                    <div class="footer-right" >
+                        <div>
+                            <a href="https://www.facebook.com/nolawyeruk/"><img src="images/face.png"></a>
+                        </div>
+                        <div class="footer-span">
+                            <a href="https://www.facebook.com/nolawyeruk/"><span>Facebook</span></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-right" >
+                        <div>
+                            <a href=" https://twitter.com/nolawyeruk"><img src="images/bird.png"></a>
+                        </div>
+                        <div class="footer-span">
+                            <a href=" https://twitter.com/nolawyeruk"><span>Twitter</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-second " >
+            <div class="col-xl-5 col-md-4 footer-circle">
+                <div class="footer-2019">
+                <p>© 2019 CVLink</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4 space"></div>
+
+            <div class="col-xl-3 col-md-4">
+                <div class="footer-bottom">
+                    <div >
+                        <a href="privacy.html"><span>Privacy Policy</span></a>
+                    </div>
+                    <div class="footer-term">
+                        <a href="terms.html"><span>Terms & Conditions</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+<!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/additional-methods.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script src="js/book.js"></script>
+
+
+
+
+
+</body>
+</html>
